@@ -1,0 +1,6 @@
+
+# from galaxy
+- src: yatesr.timezone
+
+# from GitHub
+- src: https://github.com/davidboukari/ansible-graphical-user.git
