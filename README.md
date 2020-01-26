@@ -27,3 +27,21 @@ cat requirement.yml
 ansible-galaxy init <newRole>
 ```
 
+## Playbook sample for a role
+
+```bash
+cat playbook.yml
+---
+ - name: Install Graphical Mode and vnc tools
+   become: true
+   hosts: localhost
+   roles:
+    - {role: graphical-user}
+```
+
+## Install a role
+
+```bash
+cd $HOME/.ansible/roles
+ansible-playbook -b -vvv playbook.yml
+```
