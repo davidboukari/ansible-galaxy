@@ -10,9 +10,20 @@ pip install ansible
 ansible-galaxy
 ```
 
+## Setup requirements
+
+```bash
+cat requirement.yml
+# from galaxy
+- src: yatesr.timezone
+
+# from GitHub
+- src: https://github.com/davidboukari/ansible-roles.git
+```
+
 ## Create a role
 
 ```bash
-ansible-galaxy init newRole
+ansible-galaxy init <newRole>
 ```
 
