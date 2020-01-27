@@ -2,12 +2,23 @@
 
 ## Install ansible
 
+### with python venv module
+
 ```bash
 sudo yum install python3
 python3 -m venv venv-ansible
 source venv-ansible/bin/activate
 pip install ansible
 ansible-galaxy
+```
+
+### with python virtualenv module
+
+```bash
+sudo pip3 install virtualenv
+virtualenv -p  /usr/bin/python venv_python2
+source venv_python2
+pip install ansible
 ```
 
 ## Setup requirements
